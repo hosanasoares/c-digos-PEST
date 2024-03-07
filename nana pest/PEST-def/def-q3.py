@@ -1,10 +1,16 @@
-def moeda(real:float,dolar:bool='True'):
-    taxa = 5.30
+def converter(moeda : float, dolar : bool =True):
     if dolar:
-        return real/dolar
-    else:
-        return real
 
-print(f'U$ {moeda(100)}')
-print(f'R$ {moeda(100, False)}')
+        tx =  5.30
+        convert = moeda / tx
+        return convert
     
+    else:
+        return moeda
+    
+
+
+
+moeda = float(input('digite o valor em moeda:'))
+res = converter(moeda)
+print(res)
