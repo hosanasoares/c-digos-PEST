@@ -1,22 +1,10 @@
-frutas = ['maçã', 'uva', 'laranja', 'melão', 'banana']
+#lista de frutas
+lista = ['laranja', 'maçã', 'morango', 'jabuticaba', 'mamão' ]
 
-fruta = str(input('digite o nome de uma fruta: '))
+fruta = input('digite uma fruta: ')
 
-
-if fruta == frutas[0]:
-    print(fruta)
-
-if fruta == frutas[1]:
-    print(fruta)
-
-if fruta == frutas[2]:
-    print(fruta)
-
-if fruta == frutas[3]:
-    print(fruta)
-
-if fruta == frutas[4]:
-    print(fruta)
+if fruta in lista:
+    print('Essa fruta está na lista.')
 
 else:
-    print('não existe')
+    print(f'{fruta} não está na lista.')
